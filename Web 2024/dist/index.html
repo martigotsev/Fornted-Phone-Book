@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Profile</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <nav class="navigation-bar">
+         <ul class="navigation-menu">
+            <li><a href="#">Начало</a></li>
+            <li class="dropdown">
+               <a href="#" class="dropbtn">Контакти</a>
+               <div class="dropdown-content">
+                  <a href="#">Списък с контакти</a>
+                  <a href="#">Cъздане на контакт</a>
+                  <a href="#">Редактиране на контакт</a>
+                  <a href="#">Изтриване на контакт</a>
+                  <!-- Добавете други опции на падащото меню -->
+               </div>
+            </li>
+            <li><a href="#">Любими</a></li>
+         </ul>
+         <form class="search-form">
+            <input type="text" placeholder="Търси...">
+            <button type="submit">Търси</button>
+         </form>
+      </nav>
+      <figure>
+         <div class="contact-profile">
+            <img alt="Profile Picture">
+            <div class="profile-info">
+               <h2 class="profile-name" data-info="Име"></h2>
+               <p class="profile-description" data-info="Описание"></p>
+               <p class="profile-detail" data-info=Телефон:></p>
+               <p class="profile-detail" data-info=Служебен:></p>
+               <p class="profile-detail" data-info=Град:></p>
+               <p class="profile-detail" data-info=Имейл:></p>
+               <a href="#" class="social-link">Facebook</a>
+               <a href="#" class="social-link">Twitter</a>
+               <a href="#" class="social-link">LinkedIn</a>
+            </div>
+         </div>
+      </figure>
+      <script src="script.js"></script>
+   </body>

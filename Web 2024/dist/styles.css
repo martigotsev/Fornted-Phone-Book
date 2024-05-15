@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#020024, #090979, #056dbb, #00d4ff) no-repeat center/cover;
+  align-items: center;
+}
+
+.navigation-bar {
+  background-color: #333;
+  padding: 0.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation-menu {
+  font-size: 125%;
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.navigation-menu li {
+  background-color: #fff;
+  display: inline-block;
+}
+
+.navigation-menu li a {
+  background-color: #333;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+}
+
+.navigation-menu li a:hover {
+  background-color: #555;
+  transition: 0.4s ease;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  display: flex;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+  transition: 0.4s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.search-form input[type="text"] {
+  background-color: #fff;
+  font-style: italic;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.search-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-form button:hover {
+  background-color: #45a049;
+  transition: 0.4s ease;
+}
+
+.contact-profile {
+  font-style: italic;
+  max-width: 70%;
+  padding: 20px;
+  margin: auto;
+  border: 2px solid #9a93ed;
+  border-radius: 10px;
+  background-color: rgba(250, 250, 250, 0.449);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+img {
+  width: 40%;
+  height: auto;
+  border-radius: 10%;
+  margin: 2% 7% 2% 2%;
+}
+
+.profile-info {
+  font-family: Arial;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.profile-description {
+  font-size: 125%;
+  font-style: italic;
+  text-align: left;
+}
+
+.profile-detail {
+  font-size: 125%;
+}
+
+.social-link {
+  font-size: 125%;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 3% 3%;
+  margin-right: 10px;
+  background-color: rgb(3, 3, 79);
+  border-radius: 5px;
+}
+
+.social-link:hover {
+  background-color: #056dbb;
+  transition: 0.4s ease;
+}
+
+@media only screen and (max-width: 1000px) {
+  .contact-profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-picture {
+    margin-bottom: 10px;
+  }
+
+  .navigation-menu {
+    font-size: 90%;
+    gap: 0;
+  }
+
+  .search-form input[type="text"] {
+    padding: 5px;
+  }
+
+  .search-form button {
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
